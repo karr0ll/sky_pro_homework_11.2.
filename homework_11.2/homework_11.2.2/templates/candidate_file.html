@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Candidate profile</title>
+</head>
+<body>
+    <h2>Имя кандидата: {{ candidate.name }}</h2>
+    <p>Позиция кондидата: {{ candidate.position }}</p>
+    <img src="{{ candidate.picture }}" width=200/>
+    <p>Навыки кандидата: {{ candidate.skills }}</p>
+</body>
+</html>
+
+<a href="/candidate/{{candidate.id}}">{{candidate.name}}</a>
